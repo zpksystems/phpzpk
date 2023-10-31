@@ -1,0 +1,19 @@
+{
+    "name": "zpksystems/phpzpk",
+    "description": "Library in alpha",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "zpksystems\\phpzpk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Morgan",
+            "email": "morgan@zpk.systems"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
