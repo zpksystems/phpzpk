@@ -1,6 +1,6 @@
 {
     "name": "zpksystems/phpzpk",
-    "description": "Library in alpha",
+    "description": "PHP SDK to use ZPK Systems APIs",
     "type": "library",
     "license": "MIT",
     "autoload": {

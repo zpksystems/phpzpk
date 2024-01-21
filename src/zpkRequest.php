@@ -22,7 +22,7 @@ class zpkRequest{
 	/**
 	 * API Request Constructor
 	 *
-	 * Inicializa un request, que se enviará con las
+	 * initializes a request to ZPK API
 	 * credenciales especificadas en $application
 	 *
 	 * @param zpkApplication $application The zpkApplication to which the request will be sent.
@@ -169,7 +169,6 @@ class zpkRequest{
 		}
 		return $ret;
 	}
-
 
 	/**
 	 * Send the request to ZPK and proccess response
