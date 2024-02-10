@@ -8,7 +8,7 @@ SDK to integrate all APIs from ZPK Systems into your PHP Application.
 An API that extracts vehicle information from the VIN number, and can also auto-correct incorrect numbers.
 
 **VIN-OCR**
-An api to read and autocorrect VINs, in images and documents.
+An API to read and autocorrect VINs, in images and documents.
 
 **PlateScanner**
 An OCR scanner that allows you to read vehicle license plates from different countries.
@@ -16,6 +16,17 @@ An OCR scanner that allows you to read vehicle license plates from different cou
 **ZPK Translate**
 An alternative to google translate, with cheaper prices and better translations, specially in
 english and chinesse.
+
+**ZPK Images**
+IA images generation API
+
+**ZPK Moderator**
+ZPK Moderator is an API that allows you to detect harmful or dangerous texts using artificial intelligence in your application or in user communities.
+
+Avoid or control the publication of texts that incite hatred, self-harm, or content inappropriate for minors.
+
+
+
 
 
 [Details of each ZPK API](https://zpk.systems/en/docs/api/all_apis "API Docs")
@@ -39,4 +50,4 @@ To make the requests you will need an API KEY, register as a new user at https:/
 
 ## Documentation
 
-[Check de Docs here](https://zpk.systems/en/docs/api/all_apis "API Docs")
+[Check Docs here](https://zpk.systems/en/docs/api/all_apis "API Docs")
