@@ -198,7 +198,7 @@ class zpkRequest{
 
 		// Check for errors
 		if( $info['http_code'] != 200 ){
-			throw new zpkException(EX_NETWORK_ERROR,"Invalid response code from server: {$info['http_code']}");
+			throw new zpkException(EX_NETWORK_ERROR,"Invalid response code from server: {$info['http_code']}, CURL error message: ".curl_error($ch));
 		}
 
 		// Expect only JSON from server
