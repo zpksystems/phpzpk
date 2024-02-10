@@ -4,6 +4,7 @@ namespace zpksystems\phpzpk;
 
 /** String with API host and schema */
 define("ZPK_HOST_URI",'https://zpk.systems');
+//define("ZPK_HOST_URI",'http://192.168.56.15');
 
 /**
  * Represents a request to a ZPK Systems API
@@ -122,7 +123,7 @@ class zpkRequest{
 	}
 
 
-	/** Build a Multipar Request to use with CURL
+	/** Build a Multipart Request to use with CURL
 	 *
 	 * Prepares an array of fields and files to be sent together
 	 * in a curl request
@@ -215,8 +216,9 @@ class zpkRequest{
 
 		// Check for server errors
 		if( isset($json['errors']) && is_array($json['errors']) ){
-			print_r($json);
-			throw new zpkException($json['errors'][0]['id'],$json['errors'][0]['message']);
+			$ex = new zpkException(EX_RESPONSE_ERRORS,$json['errors'][0]['message']);
+			$ex->setResponseErrors( $json['errors'] );
+			throw $ex;
 		}
 
 		return $json;
