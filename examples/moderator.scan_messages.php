@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__.'/examples_autoloader.php';
 
 use zpksystems\phpzpk\zpkApplication;
 use zpksystems\phpzpk\zpkModerator;
