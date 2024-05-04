@@ -24,6 +24,7 @@ class zpkImageGenerator{
 	private string $style = '';
 	private string $callback_url = '';
 	private string $connection_type = 'fast';
+	private string $model = 'dall-e-3';
 
 	private int $last_request_time = 0;
 
@@ -38,6 +39,13 @@ class zpkImageGenerator{
 		$this->imagesList = new zpkImagesList();
 	}
 
+	public function setModel(string $model){
+		if( $model != 'zpk-ultra' && $model != 'dall-e-3' ){
+			throw new zpkException(EX_INCOMPATIBLE_PARAMETERS,"Invalid model, valid models are: 'zpk-ultra' and 'dall-e-3'");
+		}
+		$this->model = $model;
+	}
+
 	private function sendGenerationRequest(){
 
 		$request = new zpkRequest($this->application);
@@ -45,6 +53,10 @@ class zpkImageGenerator{
 
 		$request->setParameter('prompt',$this->prompt);
 		$request->setParameter('num',$this->num_images);
+
+		if( $this->model ){
+			$request->setParameter('model',$this->model);
+		}
 
 		if( $this->quality ){
 			$request->setParameter('quality',$this->quality);
@@ -154,7 +166,6 @@ class zpkImageGenerator{
 
 		$this->num_images = $num_images;
 		$this->sendGenerationRequest();
-
 
 	}
 

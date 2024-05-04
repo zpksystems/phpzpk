@@ -8,6 +8,9 @@
             "zpksystems\\phpzpk\\": "src/"
         }
     },
+	"autoload-dev": {
+        "files": ["examples/*"]
+    },
     "authors": [
         {
             "name": "Morgan",

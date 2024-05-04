@@ -4,7 +4,6 @@ namespace zpksystems\phpzpk;
 
 /** String with API host and schema */
 define("ZPK_HOST_URI",'https://zpk.systems');
-//define("ZPK_HOST_URI",'http://192.168.56.15');
 
 /**
  * Represents a request to a ZPK Systems API
