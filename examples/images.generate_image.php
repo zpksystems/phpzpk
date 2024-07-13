@@ -2,7 +2,6 @@
 
 require __DIR__.'/examples_autoloader.php';
 
-
 use zpksystems\phpzpk\zpkApplication;
 use zpksystems\phpzpk\zpkImageGenerator;
 

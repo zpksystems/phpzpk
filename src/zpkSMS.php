@@ -65,6 +65,5 @@ class zpkSMS{
 		return $a;
 	}
 
-
 }
 
